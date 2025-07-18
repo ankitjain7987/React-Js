@@ -4,7 +4,7 @@ const ErrorMessage = ({ items }) => {
     <>
       {/* third conditional operator ternary operator */}
       {/* {fooditem.length === 0 ? <h2>Nothing to show</h2> : null} */}
-      {items.length === 0 && <h2>i am still hungry</h2>}
+      {items.length === 0 && <h2 className="ak-error">i am still hungry</h2>}
     </>
   );
 };

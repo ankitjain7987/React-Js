@@ -17,7 +17,7 @@ function App() {
   // let empty = fooditem.length === 0 ? <h2>Nothing to show</h2> : null;
   return (
     <>
-      <h1>Healthy Food</h1>
+      <h1 className="">Healthy Food</h1>
       <ErrorMessage items={fooditem}></ErrorMessage>
       <Fooditem fooditem={fooditem}> </Fooditem>
     </>

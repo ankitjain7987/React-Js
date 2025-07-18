@@ -1,0 +1,13 @@
+.ak-ul {
+  background-color: rgb(61, 178, 139);
+}
+.ak-error {
+  color: red;
+}
+
+.ak-heading {
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
