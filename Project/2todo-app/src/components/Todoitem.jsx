@@ -1,11 +1,11 @@
-function Todoitem({ itemname, itemdate }) {
+function Todoitem({ addName, addDate }) {
   return (
-    <div class="container ">
-      <div class="row kg-row">
-        <div class="col-6">{itemname}</div>
-        <div class="col-4">{itemdate}</div>
-        <div class="col-2">
-          <button type="button" class="btn btn-danger kg-button">
+    <div className="container ">
+      <div className="row kg-row">
+        <div className="col-6">{addName}</div>
+        <div className="col-4">{addDate}</div>
+        <div className="col-2">
+          <button type="button" className="btn btn-danger kg-button">
             Danger
           </button>
         </div>

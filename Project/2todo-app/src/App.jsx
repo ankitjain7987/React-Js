@@ -1,33 +1,33 @@
 import AppName from "./components/AppName";
 import AddTodo from "./components/AddTodo";
-
-import TodoAllitem from "./components/TodoAllitems";
-
+import AddItemTodo from "./components/AddItemTodo";
 import "./App.css";
-let allData = [
-  {
-    name: "Milh",
-    date: "18/07/2025",
-  },
-  {
-    name: "Milh",
-    date: "18/07/2025",
-  },
-  {
-    name: "Milh",
-    date: "18/07/2025",
-  },
-  {
-    name: "Milh",
-    date: "18/07/2025",
-  },
-];
+
 function App() {
+  let allItemData = [
+    {
+      name: "milk",
+      date: "19/07/2025",
+    },
+    {
+      name: "Coffee",
+      date: "19/07/2025",
+    },
+    {
+      name: "pizza",
+      date: "19/07/2025",
+    },
+    {
+      name: "burgher",
+      date: "19/07/2025",
+    },
+  ];
+
   return (
     <center className="todo-container">
       <AppName />
       <AddTodo />
-      <TodoAllitem allData={allData}></TodoAllitem>
+      <AddItemTodo AllData={allItemData}></AddItemTodo>
     </center>
   );
 }

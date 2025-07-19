@@ -1,15 +1,17 @@
+import Style from "./AddTodo.module.css";
+
 function AddTodo() {
   return (
-    <div class="container text-center">
-      <div class="row kg-row">
-        <div class="col-6">
+    <div className={`${Style.container} container text-center`}>
+      <div className="row kg-row">
+        <div className="col-6">
           <input type="text" placeholder="Add todo" />
         </div>
-        <div class="col-4">
+        <div className="col-4">
           <input type="date" placeholder="select date" />
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-success kg-button">
+        <div className="col-2">
+          <button type="button" className="btn btn-success">
             Success
           </button>
         </div>
