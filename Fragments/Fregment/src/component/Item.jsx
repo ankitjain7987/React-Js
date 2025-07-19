@@ -4,7 +4,7 @@ import styles from "./Item.module.css";
 const Item = ({ fooditem }) => {
   // let {fooditem}=props
   return (
-    <li className={`${styles.akitem}`}>
+    <li className={`${styles.akitem} list-group-item`}>
       <span className={styles["ak-span"]}>{fooditem}</span>
     </li>
   );
