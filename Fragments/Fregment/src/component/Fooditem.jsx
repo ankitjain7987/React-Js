@@ -1,11 +1,15 @@
-import Item from "./item";
+import Item from "./Item";
 
 const Fooditem = ({ fooditem }) => {
   return (
     <>
       <ul className="list-group ak-ul">
         {fooditem.map((item) => (
-          <Item key={item} fooditem={item}></Item>
+          <Item
+            key={item}
+            fooditem={item}
+            buttonOnclick={() => console.log(item)}
+          ></Item>
         ))}
       </ul>
     </>
