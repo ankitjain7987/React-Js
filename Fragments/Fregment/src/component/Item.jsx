@@ -1,7 +1,7 @@
 import styles from "./Item.module.css";
 
 // const Item = (props) => {
-const Item = ({ fooditem, buttonOnclick }) => {
+const Item = ({ fooditem, buttonOnclick, bot }) => {
   // let {fooditem}=props
 
   // let buttonOnclick = (event) => {
@@ -9,7 +9,7 @@ const Item = ({ fooditem, buttonOnclick }) => {
   // };
 
   return (
-    <li className={`${styles.akitem} list-group-item`}>
+    <li className={`${styles.akitem} list-group-item ${bot && "active"}`}>
       <span className={styles["ak-span"]}>{fooditem}</span>
       <button
         className={`${styles.button} btn btn-success`}
